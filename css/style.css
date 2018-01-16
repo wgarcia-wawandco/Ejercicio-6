@@ -23,6 +23,10 @@
   src: url("../fonts/titillium-web/TitilliumWeb-Light.ttf");
 }
 
+a, i{
+  color: inherit;
+}
+
 header{
   min-width: 1280px;
   position: absolute;
@@ -104,6 +108,29 @@ header{
   background: url("../images/title-decoration.png") no-repeat;
   background-position: 0 50%;
 }
+.section-3-title{
+  width: 100%;
+  font-family: titillium-web-r;
+  color: white;
+  text-transform: uppercase;
+  font-size: 30px;
+  margin: 50px 0;
+  padding-left: 90px;
+  background: url("../images/title-decoration-white.png") no-repeat;
+  background-position: 0 50%;
+}
+.section-4-title{
+  width: 100%;
+  font-family: titillium-web-r;
+  color: white;
+  text-transform: uppercase;
+  font-size: 30px;
+  margin-bottom: 70px;
+  padding-left: 90px;
+  background: url("../images/title-decoration-black.png") no-repeat;
+  background-position: 0 50%;
+}
+
 .section-med{
   display: flex;
   flex-direction: column;
@@ -184,27 +211,18 @@ button{
   letter-spacing: 2px;
   cursor: pointer;
 }
+button:hover{
+  border-color: #30bfa2;
+  background-color: white;
+  color: #30bfa2;
+  transition: background-color .4s, color .4s, border-color .2s;
+  transition-timing-function: ease;
+}
 .description-1 + button{
   margin-top: 75px;
 }
-.section-button-1{
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  box-sizing: border-box;
-  width: 55px;
-  height: 55px;
-  margin-top: 335px;
-  font-size: 30px !important;
-  border-radius: 100%;
-  border: 3px solid #d80b36;;
-  position: absolute;
-  cursor: pointer;
-  background-color: white;
-  color: #d80b36;
-  z-index: 2;
-}
-.section-button-2{
+
+.section-button-1, .section-button-2, .section-button-3, .section-button-4{
   display: flex;
   justify-content: center;
   align-items: center;
@@ -220,21 +238,20 @@ button{
   background-color: white;
   color: #5f5f5f;
 }
-.section-button-3{
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  box-sizing: border-box;
-  width: 55px;
-  height: 55px;
-  margin-top: 475px;
-  font-size: 30px !important;
-  border-radius: 100%;
-  border: 3px solid #2bbff4;
-  position: absolute;
-  cursor: pointer;
+.section-button-1{
+  margin-top: 335px;
+  border: 3px solid #d80b36;
+  color: #d80b36;
   background-color: white;
+  z-index: 2
+}
+.section-button-3{
+  border: 3px solid #2bbff4;
   color: #2bbff4;
+}
+.section-button-4{
+  border: 3px solid #2d3e50;
+  color: #2d3e50;
 }
 
 .quote{
@@ -285,6 +302,12 @@ button{
 }
 .blue{
   background-color: #2bbff4;
+}
+.black{
+  background-color: #2d3e50;
+}
+.purple{
+  background-color: #9b58b5;
 }
 
 .hexagon {
@@ -401,6 +424,9 @@ button{
   transition-timing-function: ease;
 }
 
+.margin-6{
+  margin-top: 60px;
+}
 .margin-8{
   margin: 80px 0;
 }
@@ -477,15 +503,20 @@ button{
   font-family: open-sans-l;
   color: #30bfa2;
 }
-
 .title-3{
   font-family: titillium-web-r;
   font-size: 30px;
   color: white;
-  text-align: center;
-  margin-bottom: 40px;
+  margin-bottom: 20px;
+  padding-left: 90px;
   background: url("../images/title-decoration-white.png") no-repeat;
   background-position: 0 50%;
+}
+.description-3{
+  font-family: open-sans-l;
+  color: white;
+  font-size: 11px;
+  line-height: 1.5em;
 }
 
 .col-2{
@@ -511,12 +542,6 @@ button{
 }
 .col-9{
   width: 90%;
-}
-.description-3{
-  font-family: open-sans-l;
-  color: white;
-  font-size: 12px;
-  line-height: 1.5em;
 }
 
 .icon-1{
@@ -741,5 +766,78 @@ button{
 .hexagon-social-1-outside:hover .flickr{
   background-color: #0462ca;
   transition: background-color .4s;
+  transition-timing-function: ease;
+}
+
+
+.hexagon-project{
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+.hexagon-project-back-outside{
+  width: 190px;
+  height: 215px;
+  background-color: #289d98;
+  -webkit-clip-path: polygon(50% 0%, 100% 25%, 100% 75%, 50% 100%, 0% 75%, 0% 25%);
+  clip-path: polygon(50% 0%, 100% 25%, 100% 75%, 50% 100%, 0% 75%, 0% 25%);
+}
+.hexagon-project-back-inside{
+  width: 98%;
+  height: 98%;
+  background-color: #2d3e50;
+  -webkit-clip-path: polygon(50% 0%, 100% 25%, 100% 75%, 50% 100%, 0% 75%, 0% 25%);
+  clip-path: polygon(50% 0%, 100% 25%, 100% 75%, 50% 100%, 0% 75%, 0% 25%);
+}
+.hexagon-project-back-outside, .hexagon-project-back-inside{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.hexagon-project-outside{
+  margin-top: -202px;
+  background-color: white;
+  width: 215px;
+  height: 190px;
+  -webkit-clip-path: polygon(25% 0, 75% 0, 100% 50%, 75% 100%, 25% 100%, 0 50%);
+  clip-path: polygon(25% 0, 75% 0, 100% 50%, 75% 100%, 25% 100%, 0 50%);
+}
+.hexagon-project-inside{
+  background: url("../images/project.jpg") no-repeat;
+  background-size: 100% 100%;
+  width: 95%;
+  height: 95%;
+  -webkit-clip-path: polygon(25% 0, 75% 0, 100% 50%, 75% 100%, 25% 100%, 0 50%);
+  clip-path: polygon(25% 0, 75% 0, 100% 50%, 75% 100%, 25% 100%, 0 50%);
+}
+.hexagon-project-outside, .hexagon-project-inside, .hexagon-project-title{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.hexagon-project-title{
+  width: 100%;
+  height: 100%;
+  background-color: rgba(40, 157, 152, .6);
+  opacity: 0;
+  -webkit-clip-path: polygon(25% 0, 75% 0, 100% 50%, 75% 100%, 25% 100%, 0 50%);
+  clip-path: polygon(25% 0, 75% 0, 100% 50%, 75% 100%, 25% 100%, 0 50%);
+}
+.hexagon-project-title p{
+  width: 100%;
+  height: 20%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-family: titillium-web-r;
+  text-transform: uppercase;
+  background-color: white;
+  color: #64615c;
+  opacity: 0;
+}
+.hexagon-project-outside:hover .hexagon-project-title, .hexagon-project-title p{
+  opacity:1;
+  transition: opacity .4s;
   transition-timing-function: ease;
 }
