@@ -93,6 +93,17 @@ header{
   min-width: 1280px;
 }
 
+.section-2-title{
+  width: 100%;
+  font-family: titillium-web-r;
+  color: #646464;
+  text-transform: uppercase;
+  font-size: 30px;
+  margin-bottom: 80px;
+  padding-left: 90px;
+  background: url("../images/title-decoration.png") no-repeat;
+  background-position: 0 50%;
+}
 .section-med{
   display: flex;
   flex-direction: column;
@@ -200,7 +211,7 @@ button{
   box-sizing: border-box;
   width: 55px;
   height: 55px;
-  margin-top: 430px;
+  margin-top: 475px;
   font-size: 30px !important;
   border-radius: 100%;
   border: 3px solid #ebebeb;
@@ -208,6 +219,22 @@ button{
   cursor: pointer;
   background-color: white;
   color: #5f5f5f;
+}
+.section-button-3{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  box-sizing: border-box;
+  width: 55px;
+  height: 55px;
+  margin-top: 475px;
+  font-size: 30px !important;
+  border-radius: 100%;
+  border: 3px solid #2bbff4;
+  position: absolute;
+  cursor: pointer;
+  background-color: white;
+  color: #2bbff4;
 }
 
 .quote{
@@ -249,9 +276,9 @@ button{
   justify-content: center;
   align-items: center;
   min-width: 100%;
-  height: 1000px;
-  -webkit-clip-path: polygon(100% 14%, 100% 100%, 0 86%, 0 0);
-  clip-path: polygon(100% 14%, 100% 100%, 0 86%, 0 0);
+  height: 1100px;
+  -webkit-clip-path: polygon(100% 13%, 100% 100%, 0 87%, 0 0);
+  clip-path: polygon(100% 13%, 100% 100%, 0 87%, 0 0);
 }
 .gray{
   background-color: #ebebeb;
@@ -374,12 +401,6 @@ button{
   transition-timing-function: ease;
 }
 
-.col-4{
-  width: 39%;
-}
-.col-5{
-  width: 49%;
-}
 .margin-8{
   margin: 80px 0;
 }
@@ -407,6 +428,7 @@ button{
   z-index: 1;
 }
 .float-menu ul li{
+  cursor: pointer;
   display: flex;
   align-items: center;
   background-color: #d80b36;
@@ -416,21 +438,22 @@ button{
   text-transform: uppercase;
   font-family: titillium-web-l;
   color: white;
-  padding: 10px 25px;
+  padding: 8px 19px;
   border-bottom: 1px solid rgba(255, 0, 0, 0.5);
 }
 .float-menu ul li i{
-  width: 30px;
+  width: 20px;
+  font-size: 12px;
 }
 .float-menu ul li span{
   font-size: 12px;
   display: none
 }
 .float-menu ul li:first-child{
-  border-radius: 7px 0 0 0;
+  border-radius: 5px 0 0 0;
 }
 .float-menu ul li:last-child{
-  border-radius: 0 0 0 7px;
+  border-radius: 0 0 0 5px;
   border-bottom: none;
 }
 
@@ -465,6 +488,9 @@ button{
   background-position: 0 50%;
 }
 
+.col-2{
+  width: 20%;
+}
 .col-3{
   width: 30%;
 }
@@ -479,6 +505,9 @@ button{
 }
 .col-7{
   width: 70%;
+}
+.col-8{
+  width: 80%;
 }
 .col-9{
   width: 90%;
@@ -515,93 +544,202 @@ button{
   background-color: #d80b36;
 }
 .icon-9{
-  background-color: #1060ad;
+  background-color: purple;
 }
-.hexagon-2{
+
+.hexagon-outside{
+  cursor: pointer;
+  font-family: open-sans-r;
+  color: white;
   display: flex;
   justify-content: center;
   align-items: center;
-  font-family: open-sans-r;
-  font-size: 20px;
-  position: relative;
   width: 65px;
-  height: 37.53px;
-  margin: 18.76px 0;
-  border-left: solid 7px;
-  border-right: solid 7px;
+  height: 75px;
+  background: white;
+  -webkit-clip-path: polygon(50% 0%, 100% 25%, 100% 75%, 50% 100%, 0% 75%, 0% 25%);
+  clip-path: polygon(50% 0%, 100% 25%, 100% 75%, 50% 100%, 0% 75%, 0% 25%);
 }
-.hexagon-2,.hexagon-2:before, .hexagon-2:after {
-    box-sizing:border-box;
-    border-color: white;
+.hexagon-inside{
+  cursor: pointer;
+  width: 85%;
+  height: 85%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  -webkit-clip-path: polygon(50% 0%, 100% 25%, 100% 75%, 50% 100%, 0% 75%, 0% 25%);
+  clip-path: polygon(50% 0%, 100% 25%, 100% 75%, 50% 100%, 0% 75%, 0% 25%);
 }
-.hexagon-2:before,
-.hexagon-2:after {
-  content: "";
-  position: absolute;
-  z-index: 1;
-  width: 45.96px;
-  height: 45.96px;
-  -webkit-transform: scaleY(0.5774) rotate(-45deg);
-  -ms-transform: scaleY(0.5774) rotate(-45deg);
-  transform: scaleY(0.5774) rotate(-45deg);
-  background-color: inherit;
-  left: 2.5190px;
-}
-.hexagon-2:before {
-  top: -22.9810px;
-  border-top: solid 9.8995px white;
-  border-right: solid 9.8995px white;
-}
-.hexagon-2:after {
-  bottom: -22.9810px;
-  border-bottom: solid 9.8995px white;
-  border-left: solid 9.8995px white;
-}
-.hexagon-2 a{
-  z-index: 2;
-  text-decoration: none;
+.hexagon-inside i{
   color: white;
 }
-
-
-.hexagon-3-back{
-  width: 100px;
-  height: 80px;
+.hexagon-inside a{
+  font-family: open-sans-r;
+  color: white;
+  text-decoration: none;
+}
+.hexagon-outside:hover .hexagon-inside, .hexagon-outside:hover a, .hexagon-outside:hover i{
+  color: gray;
   background-color: white;
-  -webkit-clip-path: polygon(25% 0, 75% 0, 100% 50%, 75% 100%, 25% 100%, 0 50%);
-  clip-path: polygon(25% 0, 75% 0, 100% 50%, 75% 100%, 25% 100%, 0 50%);
+  transition: color .4s;
+  transition-timing-function: ease;
 }
-.hexagon-3 {
-  position: relative;
+
+.team{
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+.team .hexagon-2-outside{
+  margin-top: -210px;
+}
+.hexagon-2-outside-back{
+  cursor: pointer;
+  width: 220px;
+  height: 190px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: #56676b;
+  -webkit-clip-path: polygon(25% 0, 75% 0, 100% 49%, 75% 100%, 25% 100%, 0 50%);
+  clip-path: polygon(25% 0, 75% 0, 100% 49%, 75% 100%, 25% 100%, 0 50%);
+}
+.hexagon-2-inside-back{
+  width: 98%;
+  height: 98%;
+  -webkit-clip-path: polygon(25% 0, 75% 0, 100% 49%, 75% 100%, 25% 100%, 0 50%);
+  clip-path: polygon(25% 0, 75% 0, 100% 49%, 75% 100%, 25% 100%, 0 50%);
+}
+.hexagon-2-outside{
+  cursor: pointer;
+  display: flex;
+  justify-content: center;
+  align-items: center;
   width: 200px;
-  height: 115.47px;
-  margin: 57.74px 0;
-  border-left: solid 10px #ffffff;
-  border-right: solid 10px #ffffff;
+  height: 230px;
+  background-color: white;
+  -webkit-clip-path: polygon(50% 0%, 100% 25%, 100% 75%, 50% 100%, 0% 75%, 0% 25%);
+  clip-path: polygon(50% 0%, 100% 25%, 100% 75%, 50% 100%, 0% 75%, 0% 25%);
 }
-.hexagon-3,.hexagon-3:before, .hexagon-3:after {
-    box-sizing:border-box;
+.hexagon-2-inside{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 90%;
+  height: 90%;
+  background-image: url("../images/team.jpeg");
+  -webkit-clip-path: polygon(50% 0%, 100% 25%, 100% 75%, 50% 100%, 0% 75%, 0% 25%);
+  clip-path: polygon(50% 0%, 100% 25%, 100% 75%, 50% 100%, 0% 75%, 0% 25%);
 }
-.hexagon-3:before,
-.hexagon-3:after {
-  content: "";
-  position: absolute;
-  z-index: 1;
-  width: 141.42px;
-  height: 141.42px;
-  -webkit-transform: scaleY(0.5774) rotate(-45deg);
-  -ms-transform: scaleY(0.5774) rotate(-45deg);
-  transform: scaleY(0.5774) rotate(-45deg);
-  background-color: inherit;
-  left: 19.2893px;
+.hexagon-2-inside .text-description{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  height: 100%;
 }
-.hexagon-3:before {
-  top: -70.7107px;
-  border-top: solid 14.1421px #ffffff;
-  border-right: solid 14.1421px #ffffff;
+.hexagon-2-inside .text-description p{
+  opacity: 0;
+  font-family: open-sans-r;
+  color: white;
+  line-height: 2em;
+  font-size: 11px;
+  text-align: center;
+  padding: 0 10px;
 }
-.hexagon-3:after {
-  bottom: -70.7107px;
-  border-bottom: solid 14.1421px #ffffff;
-  border-left: solid 14.1421px #ffffff;
+
+.hexagon-2-outside:hover .text-description{
+  background-color: rgba(48, 191, 162, .8);
+  transition: background-color .4s;
+  transition-timing-function: ease;
+}
+.hexagon-2-outside:hover .text-description p{
+  opacity: 1;
+  transition: opacity .4s;
+  transition-timing-function: ease;
+}
+
+.title-team{
+  font-family: titillium-web-r;
+  font-size: 22px;
+  text-align: center;
+  text-transform: uppercase;
+  margin-top: 30px;
+  color: #323230;
+}
+.job{
+  color: white;
+  font-family: open-sans-r;
+  text-transform: uppercase;
+  font-size: 11px;
+  margin: 10px 0;
+}
+
+.social-team{
+  width: 80%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.hexagon-social-1-outside{
+  width: 20px;
+  height: 25px;
+  background-color: white;
+  -webkit-clip-path: polygon(50% 0%, 100% 25%, 100% 75%, 50% 100%, 0% 75%, 0% 25%);
+  clip-path: polygon(50% 0%, 100% 25%, 100% 75%, 50% 100%, 0% 75%, 0% 25%);
+}
+.hexagon-social-1-inside{
+  width: 80%;
+  height: 80%;
+  background-color: white;
+  -webkit-clip-path: polygon(50% 0%, 100% 25%, 100% 75%, 50% 100%, 0% 75%, 0% 25%);
+  clip-path: polygon(50% 0%, 100% 25%, 100% 75%, 50% 100%, 0% 75%, 0% 25%);
+}
+.hexagon-social-1-inside i{
+  color: #2bbff4;
+  font-size: 10px;
+  margin-top: -2px;
+}
+.hexagon-social-1-outside, .hexagon-social-1-inside{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  cursor: pointer;
+}
+.hexagon-social-1-outside:hover i{
+  color: white;
+  transition: color .4s;
+  transition-timing-function: ease;
+}
+
+.hexagon-social-1-outside:hover .facebook{
+  background-color: #3a559f;
+  transition: background-color .4s;
+  transition-timing-function: ease;
+}
+.hexagon-social-1-outside:hover .twitter{
+  background-color: #1ea1f3;
+  transition: background-color .4s;
+  transition-timing-function: ease;
+}
+.hexagon-social-1-outside:hover .google{
+  background-color: #ea4235;
+  transition: background-color .4s;
+  transition-timing-function: ease;
+}
+.hexagon-social-1-outside:hover .dribbble{
+  background-color: #eb4c89;
+  transition: background-color .4s;
+  transition-timing-function: ease;
+}
+.hexagon-social-1-outside:hover .behance{
+  background-color: #1273b1;
+  transition: background-color .4s;
+  transition-timing-function: ease;
+}
+.hexagon-social-1-outside:hover .flickr{
+  background-color: #0462ca;
+  transition: background-color .4s;
+  transition-timing-function: ease;
 }
