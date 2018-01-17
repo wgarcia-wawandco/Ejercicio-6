@@ -59,6 +59,7 @@ header{
   align-items: center;
   margin: 0 8px;
   list-style: none;
+  transition: padding-top .4s, color .4s, font-size 0.4s;
 }
 .menu li span{
   opacity: 0;
@@ -67,6 +68,7 @@ header{
   text-transform: uppercase;
   margin-top: 5px;
   font-size: 11px;
+  transition: opacity 0.5s, color;
 }
 .menu li:hover{
   color: #d80b36;
@@ -86,15 +88,15 @@ header{
   opacity: 1 !important;
 }
 
-.section-1{
+section{
   display: flex;
   flex-direction: column;
   justify-content: center;
   align-items: center;
   min-width: 1280px;
 }
-.section-2, .section-3{
-  min-width: 1280px;
+.section-5{
+  height: 950px;
 }
 
 .section-2-title{
@@ -128,6 +130,17 @@ header{
   margin-bottom: 70px;
   padding-left: 90px;
   background: url("../images/title-decoration-black.png") no-repeat;
+  background-position: 0 50%;
+}
+.section-5-title{
+  width: 100%;
+  font-family: titillium-web-r;
+  color: white;
+  text-transform: uppercase;
+  font-size: 30px;
+  margin-bottom: 70px;
+  padding-left: 90px;
+  background: url("../images/title-decoration5.png") no-repeat;
   background-position: 0 50%;
 }
 
@@ -210,6 +223,7 @@ button{
   font-size: 12px;
   letter-spacing: 2px;
   cursor: pointer;
+  transition: background-color .4s, color .4s, border-color .2s;
 }
 button:hover{
   border-color: #30bfa2;
@@ -222,7 +236,7 @@ button:hover{
   margin-top: 75px;
 }
 
-.section-button-1, .section-button-2, .section-button-3, .section-button-4{
+[class|="section-button"]{
   display: flex;
   justify-content: center;
   align-items: center;
@@ -253,6 +267,11 @@ button:hover{
   border: 3px solid #2d3e50;
   color: #2d3e50;
 }
+.section-button-5{
+  border: 3px solid #9b58b5;
+  color: #9b58b5;
+  margin-top: 410px;
+}
 
 .quote{
   display: flex;
@@ -280,6 +299,7 @@ button:hover{
   border: 1px solid #3bceb3;
   border-radius: 50%;
   margin: 0 3px;
+  transition: background-color .4s;
 }
 .quote-pagination a.active, .quote-pagination a:hover{
   background-color: #3bceb3;
@@ -320,6 +340,7 @@ button:hover{
   display: flex;
   justify-content: center;
   align-items: center;
+  transition: background-color .3s;
 }
 .hexagon i{
   z-index: 2;
@@ -466,6 +487,7 @@ button:hover{
   color: white;
   padding: 8px 19px;
   border-bottom: 1px solid rgba(255, 0, 0, 0.5);
+  transition: right .4s, border-radius .4s;
 }
 .float-menu ul li i{
   width: 20px;
@@ -594,14 +616,17 @@ button:hover{
   align-items: center;
   -webkit-clip-path: polygon(50% 0%, 100% 25%, 100% 75%, 50% 100%, 0% 75%, 0% 25%);
   clip-path: polygon(50% 0%, 100% 25%, 100% 75%, 50% 100%, 0% 75%, 0% 25%);
+  transition: color .4s;
 }
 .hexagon-inside i{
   color: white;
+  transition: color .4s;
 }
 .hexagon-inside a{
   font-family: open-sans-r;
   color: white;
   text-decoration: none;
+  transition: color .4s;
 }
 .hexagon-outside:hover .hexagon-inside, .hexagon-outside:hover a, .hexagon-outside:hover i{
   color: gray;
@@ -663,6 +688,7 @@ button:hover{
   align-items: center;
   width: 100%;
   height: 100%;
+  transition: background-color .4s;
 }
 .hexagon-2-inside .text-description p{
   opacity: 0;
@@ -672,6 +698,7 @@ button:hover{
   font-size: 11px;
   text-align: center;
   padding: 0 10px;
+  transition: opacity .4s;
 }
 
 .hexagon-2-outside:hover .text-description{
@@ -713,6 +740,7 @@ button:hover{
   background-color: white;
   -webkit-clip-path: polygon(50% 0%, 100% 25%, 100% 75%, 50% 100%, 0% 75%, 0% 25%);
   clip-path: polygon(50% 0%, 100% 25%, 100% 75%, 50% 100%, 0% 75%, 0% 25%);
+  transition: color .4s;
 }
 .hexagon-social-1-inside{
   width: 80%;
@@ -823,6 +851,7 @@ button:hover{
   opacity: 0;
   -webkit-clip-path: polygon(25% 0, 75% 0, 100% 50%, 75% 100%, 25% 100%, 0 50%);
   clip-path: polygon(25% 0, 75% 0, 100% 50%, 75% 100%, 25% 100%, 0 50%);
+  transition: opacity .4s;
 }
 .hexagon-project-title p{
   width: 100%;
@@ -840,4 +869,103 @@ button:hover{
   opacity:1;
   transition: opacity .4s;
   transition-timing-function: ease;
+}
+
+.news{
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+.image-news{
+  border-radius: 5px;
+  width: 210px;
+  height: 160px;
+  overflow: hidden;
+}
+.image-news img{
+  width: inherit;
+  height: inherit;
+  border-radius: 5px;
+}
+.news-description{
+  display: flex;
+  flex-direction: column;
+  color: white;
+  font-family: open-sans-l;
+  font-size: 10px;
+  margin-top: -163px;
+  border-radius: 5px;
+  width: 103%;
+  height: 103%;
+  background-color: rgba(40, 157, 152, .6);
+  -webkit-clip-path: polygon(
+  0 0,
+  100% 0,
+  100% 0,
+  0 100%,
+  0 100%);
+  transition: all .5s !important;
+}
+.news-description .abstract{
+  line-height: 1.5em;
+  opacity: 0;
+  transition: 1s ease;
+}
+.news-description .title{
+  font-family: titillium-web-r;
+  font-size: 16px;
+  text-transform: uppercase;
+}
+.news-description *{
+  margin: 10px;
+}
+.image-news:hover .news-description{
+  -webkit-clip-path: polygon(
+    /* X and Y points */
+    0 0%,
+    100% 0,
+    100% 100%,
+    100% 100%,
+    0 100%
+  );
+}
+.image-news:hover .abstract{
+  opacity: 1;
+}
+
+.news .buttons{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.buttons button{
+  font-family: open-sans-l;
+  letter-spacing: 1px;
+  background-color: white;
+  color: #a1a1a1;
+  padding: 3px 15px;
+  border-top: none;
+  border-left: 1px solid #a1a1a1;
+  border-bottom: none;
+  border-right: none;
+  border-radius: 0;
+  transition: all .4s ease;
+}
+.buttons button:first-child{
+  border-radius: 0 0 0 5px;
+  border-left: none;
+}
+.buttons button:last-child{
+  border-radius: 0 0 5px 0;
+}
+.buttons button:hover{
+  background-color: #30bfa2;
+  color: white;
+}
+
+.latest{
+  display: flex;
+  width: 45%;
+  justify-content: space-between;
 }
