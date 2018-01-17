@@ -445,6 +445,9 @@ button:hover{
   transition-timing-function: ease;
 }
 
+.margin-3{
+  margin-top: 30px;
+}
 .margin-6{
   margin-top: 60px;
 }
@@ -963,9 +966,58 @@ button:hover{
   background-color: #30bfa2;
   color: white;
 }
-
 .latest{
   display: flex;
   width: 45%;
   justify-content: space-between;
+}
+
+.button-2{
+  height: 70px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: white;
+  padding: 0 27px;
+  border: 1px solid #45d1ba;
+  border-radius: 0;
+}
+
+.hexagon-b{
+  margin-right: 30px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-width: 80px;
+  height: 90px;
+  -webkit-clip-path: polygon(50% 0%, 100% 25%, 100% 75%, 50% 100%, 0% 75%, 0% 25%);
+  clip-path: polygon(50% 0%, 100% 25%, 100% 75%, 50% 100%, 0% 75%, 0% 25%);
+}
+.hexagon-b img{
+  width: 130%;
+  filter: grayscale(100%);
+}
+.title-5{
+  font-family: titillium-web-l;
+  color: #3fc9b4;
+  text-transform: uppercase;
+}
+.job-2{
+  font-family: open-sans-r;
+  color: #3fc9b4;
+  font-style: italic;
+  font-size: 9px;
+}
+.description-b{
+  margin-top: 15px;
+  line-height: 1.5em;
+  font-family: open-sans-l;
+  font-style: italic;
+  font-size: 11px;
+  color: #969696;
+}
+
+.vertical-line{
+  height: 100px;
+  border-right: 1px dashed #3fc9b4;
 }
