@@ -161,6 +161,7 @@ section{
   justify-content: center;
   align-items: center;
   margin: 50px 0;
+  min-width: 1280px;
 }
 .bg-1{
   display: flex;
